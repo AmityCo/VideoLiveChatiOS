@@ -1,0 +1,21 @@
+PODS:
+  - MenuItemKit (4.0.1)
+  - UpstraUIKit (1.11.4)
+
+DEPENDENCIES:
+  - MenuItemKit (~> 4.0.0)
+  - UpstraUIKit (= 1.11.4)
+
+SPEC REPOS:
+  https://github.com/EkoCommunications/EkoMessagingSDKUIKit.git:
+    - UpstraUIKit
+  trunk:
+    - MenuItemKit
+
+SPEC CHECKSUMS:
+  MenuItemKit: 1459920e984d823e1bcc858b7a964f94e6bfa0f6
+  UpstraUIKit: eefa00c20a396f64b79bb7d35f2877d3677b9d90
+
+PODFILE CHECKSUM: df512439c75d1872d84b46e66ef3160dee9a48e8
+
+COCOAPODS: 1.10.1

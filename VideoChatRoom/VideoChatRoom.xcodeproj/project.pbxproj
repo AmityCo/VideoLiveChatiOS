@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5571B81C54F60D21575791FC /* Pods_VideoChatRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB3BCC54A7CEE42EA111D0 /* Pods_VideoChatRoom.framework */; };
+		7244F933261F459300D8C7F4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244F932261F459300D8C7F4 /* LoadingViewController.swift */; };
+		72E2F3862620A47200C95C90 /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2F3852620A47200C95C90 /* KeyboardService.swift */; };
+		84596F8A26085CB5003BDFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84596F8926085CB5003BDFC8 /* AppDelegate.swift */; };
+		84596F8C26085CB5003BDFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84596F8B26085CB5003BDFC8 /* SceneDelegate.swift */; };
+		84596F9126085CB5003BDFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84596F8F26085CB5003BDFC8 /* Main.storyboard */; };
+		84596F9326085CB7003BDFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84596F9226085CB7003BDFC8 /* Assets.xcassets */; };
+		84596F9626085CB7003BDFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84596F9426085CB7003BDFC8 /* LaunchScreen.storyboard */; };
+		846412852609CCE90009344C /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846412842609CCE90009344C /* LiveStreamViewController.swift */; };
+		84677D3D261D580E00CA6A28 /* EkoMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677D3A261D580D00CA6A28 /* EkoMessageModel.swift */; };
+		84677D3E261D580E00CA6A28 /* MessageListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677D3B261D580E00CA6A28 /* MessageListManager.swift */; };
+		84677D3F261D580E00CA6A28 /* MessageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677D3C261D580E00CA6A28 /* MessageTableView.swift */; };
+		84677D43261D581700CA6A28 /* EkoDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84677D42261D581700CA6A28 /* EkoDateFormatter.swift */; };
+		84ECA150261ACC0700CD6772 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECA14F261ACC0700CD6772 /* ClientManager.swift */; };
+		84ECA203261AF9B800CD6772 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84ECA201261AF9B800CD6772 /* MessageCell.xib */; };
+		84ECA204261AF9B800CD6772 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECA202261AF9B800CD6772 /* MessageCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CAB3BCC54A7CEE42EA111D0 /* Pods_VideoChatRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChatRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7244F932261F459300D8C7F4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		72E2F3852620A47200C95C90 /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		84596F8626085CB5003BDFC8 /* VideoChatRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChatRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84596F8926085CB5003BDFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84596F8B26085CB5003BDFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84596F9026085CB5003BDFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84596F9226085CB7003BDFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84596F9526085CB7003BDFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84596F9726085CB7003BDFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846412842609CCE90009344C /* LiveStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
+		84677D3A261D580D00CA6A28 /* EkoMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EkoMessageModel.swift; sourceTree = "<group>"; };
+		84677D3B261D580E00CA6A28 /* MessageListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListManager.swift; sourceTree = "<group>"; };
+		84677D3C261D580E00CA6A28 /* MessageTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableView.swift; sourceTree = "<group>"; };
+		84677D42261D581700CA6A28 /* EkoDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EkoDateFormatter.swift; sourceTree = "<group>"; };
+		84ECA14F261ACC0700CD6772 /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+		84ECA201261AF9B800CD6772 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		84ECA202261AF9B800CD6772 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		B5AE8F1B0D0006F3C0C7DC2B /* Pods-VideoChatRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChatRoom.debug.xcconfig"; path = "Target Support Files/Pods-VideoChatRoom/Pods-VideoChatRoom.debug.xcconfig"; sourceTree = "<group>"; };
+		BA7F5C5195319528C0065B86 /* Pods-VideoChatRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChatRoom.release.xcconfig"; path = "Target Support Files/Pods-VideoChatRoom/Pods-VideoChatRoom.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84596F8326085CB5003BDFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5571B81C54F60D21575791FC /* Pods_VideoChatRoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A485875B2A0D0082C276685 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5AE8F1B0D0006F3C0C7DC2B /* Pods-VideoChatRoom.debug.xcconfig */,
+				BA7F5C5195319528C0065B86 /* Pods-VideoChatRoom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84557C1E26368F75003FA3FD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				84ECA14F261ACC0700CD6772 /* ClientManager.swift */,
+				84677D3B261D580E00CA6A28 /* MessageListManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		84557C1F26368FA2003FA3FD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84557C2026368FBB003FA3FD /* Loading */,
+				84557C2226368FE3003FA3FD /* LiveStream */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84557C2026368FBB003FA3FD /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				84557C2126368FC6003FA3FD /* ViewController */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		84557C2126368FC6003FA3FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7244F932261F459300D8C7F4 /* LoadingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84557C2226368FE3003FA3FD /* LiveStream */ = {
+			isa = PBXGroup;
+			children = (
+				84557C2326368FEE003FA3FD /* Cell */,
+				84557C242636902F003FA3FD /* Model */,
+				84557C2526369053003FA3FD /* View */,
+				84557C2626369059003FA3FD /* ViewController */,
+			);
+			path = LiveStream;
+			sourceTree = "<group>";
+		};
+		84557C2326368FEE003FA3FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84ECA202261AF9B800CD6772 /* MessageCell.swift */,
+				84ECA201261AF9B800CD6772 /* MessageCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84557C242636902F003FA3FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84677D3A261D580D00CA6A28 /* EkoMessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84557C2526369053003FA3FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84677D3C261D580E00CA6A28 /* MessageTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84557C2626369059003FA3FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				846412842609CCE90009344C /* LiveStreamViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84596F7D26085CB5003BDFC8 = {
+			isa = PBXGroup;
+			children = (
+				84596F8826085CB5003BDFC8 /* VideoChatRoom */,
+				84596F8726085CB5003BDFC8 /* Products */,
+				7A485875B2A0D0082C276685 /* Pods */,
+				F4DC6CC240E2B21A4918755F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84596F8726085CB5003BDFC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84596F8626085CB5003BDFC8 /* VideoChatRoom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84596F8826085CB5003BDFC8 /* VideoChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				84677D41261D581700CA6A28 /* Helper */,
+				84557C1E26368F75003FA3FD /* Managers */,
+				84557C1F26368FA2003FA3FD /* Modules */,
+				84596F8F26085CB5003BDFC8 /* Main.storyboard */,
+				84596F9426085CB7003BDFC8 /* LaunchScreen.storyboard */,
+				84596F8926085CB5003BDFC8 /* AppDelegate.swift */,
+				84596F8B26085CB5003BDFC8 /* SceneDelegate.swift */,
+				84596F9226085CB7003BDFC8 /* Assets.xcassets */,
+				84596F9726085CB7003BDFC8 /* Info.plist */,
+			);
+			path = VideoChatRoom;
+			sourceTree = "<group>";
+		};
+		84677D41261D581700CA6A28 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84677D42261D581700CA6A28 /* EkoDateFormatter.swift */,
+				72E2F3852620A47200C95C90 /* KeyboardService.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F4DC6CC240E2B21A4918755F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB3BCC54A7CEE42EA111D0 /* Pods_VideoChatRoom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84596F8526085CB5003BDFC8 /* VideoChatRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84596F9A26085CB7003BDFC8 /* Build configuration list for PBXNativeTarget "VideoChatRoom" */;
+			buildPhases = (
+				CBE99D37E4BAB73CD0D63AB9 /* [CP] Check Pods Manifest.lock */,
+				84596F8226085CB5003BDFC8 /* Sources */,
+				84596F8326085CB5003BDFC8 /* Frameworks */,
+				84596F8426085CB5003BDFC8 /* Resources */,
+				DC8A117110D5F78136B56277 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoChatRoom;
+			productName = VideoChatRoom;
+			productReference = 84596F8626085CB5003BDFC8 /* VideoChatRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84596F7E26085CB5003BDFC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					84596F8526085CB5003BDFC8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 84596F8126085CB5003BDFC8 /* Build configuration list for PBXProject "VideoChatRoom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84596F7D26085CB5003BDFC8;
+			productRefGroup = 84596F8726085CB5003BDFC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84596F8526085CB5003BDFC8 /* VideoChatRoom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84596F8426085CB5003BDFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84596F9626085CB7003BDFC8 /* LaunchScreen.storyboard in Resources */,
+				84596F9326085CB7003BDFC8 /* Assets.xcassets in Resources */,
+				84596F9126085CB5003BDFC8 /* Main.storyboard in Resources */,
+				84ECA203261AF9B800CD6772 /* MessageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBE99D37E4BAB73CD0D63AB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoChatRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC8A117110D5F78136B56277 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoChatRoom/Pods-VideoChatRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoChatRoom/Pods-VideoChatRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoChatRoom/Pods-VideoChatRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84596F8226085CB5003BDFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ECA150261ACC0700CD6772 /* ClientManager.swift in Sources */,
+				84677D3E261D580E00CA6A28 /* MessageListManager.swift in Sources */,
+				846412852609CCE90009344C /* LiveStreamViewController.swift in Sources */,
+				84677D3D261D580E00CA6A28 /* EkoMessageModel.swift in Sources */,
+				84677D3F261D580E00CA6A28 /* MessageTableView.swift in Sources */,
+				84ECA204261AF9B800CD6772 /* MessageCell.swift in Sources */,
+				72E2F3862620A47200C95C90 /* KeyboardService.swift in Sources */,
+				84596F8A26085CB5003BDFC8 /* AppDelegate.swift in Sources */,
+				84677D43261D581700CA6A28 /* EkoDateFormatter.swift in Sources */,
+				7244F933261F459300D8C7F4 /* LoadingViewController.swift in Sources */,
+				84596F8C26085CB5003BDFC8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84596F8F26085CB5003BDFC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84596F9026085CB5003BDFC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84596F9426085CB7003BDFC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84596F9526085CB7003BDFC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84596F9826085CB7003BDFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84596F9926085CB7003BDFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84596F9B26085CB7003BDFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AE8F1B0D0006F3C0C7DC2B /* Pods-VideoChatRoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37Z583JR6K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = VideoChatRoom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekoenterprise.VideoChatRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84596F9C26085CB7003BDFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7F5C5195319528C0065B86 /* Pods-VideoChatRoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37Z583JR6K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = VideoChatRoom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekoenterprise.VideoChatRoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84596F8126085CB5003BDFC8 /* Build configuration list for PBXProject "VideoChatRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84596F9826085CB7003BDFC8 /* Debug */,
+				84596F9926085CB7003BDFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84596F9A26085CB7003BDFC8 /* Build configuration list for PBXNativeTarget "VideoChatRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84596F9B26085CB7003BDFC8 /* Debug */,
+				84596F9C26085CB7003BDFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84596F7E26085CB5003BDFC8 /* Project object */;
+}
