@@ -113,6 +113,20 @@ File: Managers/MessageListManager.swift
 
 LiveStreamViewController will setup everything by using the methods inside the above file. The setup is highly straightforward, please feel free to jump around by looking at its definition.
 
+## UI Modularize
+
+Live Chat UI is divided into three main UI classes as follows: `MessageTableView`, `MessageComposeBarView` and `MessageReplyView`.
+Please see image below for further reference.
+
+![image](https://user-images.githubusercontent.com/74768384/118767327-c50dd780-b8a7-11eb-8358-75d277cf1e02.png)
+
+### How to use them
+1. Create the view you desire on the storyboard
+2. Link the respective view to the class you want to use (Select the view > identity inspector > put the name of the class inside the class input field under custom class)
+3. Each class will populate every element, including the constraints automatically to your view on the storyboard
+
+For more example on how you may set this up, please see Main.storyboard and take a look at LiveStreamViewController or SampleViewController.
+
 ### Chat message options
 1. Send message
 2. Reply
