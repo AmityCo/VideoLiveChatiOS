@@ -10,6 +10,11 @@
 		5571B81C54F60D21575791FC /* Pods_VideoChatRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB3BCC54A7CEE42EA111D0 /* Pods_VideoChatRoom.framework */; };
 		7244F933261F459300D8C7F4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244F932261F459300D8C7F4 /* LoadingViewController.swift */; };
 		72E2F3862620A47200C95C90 /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2F3852620A47200C95C90 /* KeyboardService.swift */; };
+		72EF91482653D07500CB07A9 /* VideoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF91472653D07500CB07A9 /* VideoHeaderView.swift */; };
+		72EF914B265404EE00CB07A9 /* MessageComposeBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF914A265404EE00CB07A9 /* MessageComposeBarView.swift */; };
+		72EF914F2654B34B00CB07A9 /* MessageReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF914E2654B34B00CB07A9 /* MessageReplyView.swift */; };
+		72EF91532654CC5E00CB07A9 /* ActionMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF91522654CC5E00CB07A9 /* ActionMenuManager.swift */; };
+		72EF91572654CE9C00CB07A9 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EF91562654CE9C00CB07A9 /* SampleViewController.swift */; };
 		84596F8A26085CB5003BDFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84596F8926085CB5003BDFC8 /* AppDelegate.swift */; };
 		84596F8C26085CB5003BDFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84596F8B26085CB5003BDFC8 /* SceneDelegate.swift */; };
 		84596F9126085CB5003BDFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84596F8F26085CB5003BDFC8 /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 		3CAB3BCC54A7CEE42EA111D0 /* Pods_VideoChatRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoChatRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7244F932261F459300D8C7F4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		72E2F3852620A47200C95C90 /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		72EF91472653D07500CB07A9 /* VideoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHeaderView.swift; sourceTree = "<group>"; };
+		72EF914A265404EE00CB07A9 /* MessageComposeBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeBarView.swift; sourceTree = "<group>"; };
+		72EF914E2654B34B00CB07A9 /* MessageReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReplyView.swift; sourceTree = "<group>"; };
+		72EF91522654CC5E00CB07A9 /* ActionMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionMenuManager.swift; sourceTree = "<group>"; };
+		72EF91562654CE9C00CB07A9 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		84596F8626085CB5003BDFC8 /* VideoChatRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChatRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84596F8926085CB5003BDFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84596F8B26085CB5003BDFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,49 +79,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		84557C1E26368F75003FA3FD /* Managers */ = {
+		84557C1E26368F75003FA3FD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				72EF91522654CC5E00CB07A9 /* ActionMenuManager.swift */,
 				84ECA14F261ACC0700CD6772 /* ClientManager.swift */,
 				84677D3B261D580E00CA6A28 /* MessageListManager.swift */,
 			);
-			path = Managers;
+			path = Manager;
 			sourceTree = "<group>";
 		};
-		84557C1F26368FA2003FA3FD /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				84557C2026368FBB003FA3FD /* Loading */,
-				84557C2226368FE3003FA3FD /* LiveStream */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		84557C2026368FBB003FA3FD /* Loading */ = {
-			isa = PBXGroup;
-			children = (
-				84557C2126368FC6003FA3FD /* ViewController */,
-			);
-			path = Loading;
-			sourceTree = "<group>";
-		};
-		84557C2126368FC6003FA3FD /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7244F932261F459300D8C7F4 /* LoadingViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		84557C2226368FE3003FA3FD /* LiveStream */ = {
+		84557C2226368FE3003FA3FD /* LiveChat */ = {
 			isa = PBXGroup;
 			children = (
 				84557C2326368FEE003FA3FD /* Cell */,
+				84677D41261D581700CA6A28 /* Helper */,
+				84557C1E26368F75003FA3FD /* Manager */,
 				84557C242636902F003FA3FD /* Model */,
 				84557C2526369053003FA3FD /* View */,
-				84557C2626369059003FA3FD /* ViewController */,
 			);
-			path = LiveStream;
+			path = LiveChat;
 			sourceTree = "<group>";
 		};
 		84557C2326368FEE003FA3FD /* Cell */ = {
@@ -134,7 +121,10 @@
 		84557C2526369053003FA3FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				72EF914A265404EE00CB07A9 /* MessageComposeBarView.swift */,
+				72EF914E2654B34B00CB07A9 /* MessageReplyView.swift */,
 				84677D3C261D580E00CA6A28 /* MessageTableView.swift */,
+				72EF91472653D07500CB07A9 /* VideoHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,7 +132,9 @@
 		84557C2626369059003FA3FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7244F932261F459300D8C7F4 /* LoadingViewController.swift */,
 				846412842609CCE90009344C /* LiveStreamViewController.swift */,
+				72EF91562654CE9C00CB07A9 /* SampleViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -150,6 +142,7 @@
 		84596F7D26085CB5003BDFC8 = {
 			isa = PBXGroup;
 			children = (
+				84557C2226368FE3003FA3FD /* LiveChat */,
 				84596F8826085CB5003BDFC8 /* VideoChatRoom */,
 				84596F8726085CB5003BDFC8 /* Products */,
 				7A485875B2A0D0082C276685 /* Pods */,
@@ -168,13 +161,11 @@
 		84596F8826085CB5003BDFC8 /* VideoChatRoom */ = {
 			isa = PBXGroup;
 			children = (
-				84677D41261D581700CA6A28 /* Helper */,
-				84557C1E26368F75003FA3FD /* Managers */,
-				84557C1F26368FA2003FA3FD /* Modules */,
 				84596F8F26085CB5003BDFC8 /* Main.storyboard */,
 				84596F9426085CB7003BDFC8 /* LaunchScreen.storyboard */,
 				84596F8926085CB5003BDFC8 /* AppDelegate.swift */,
 				84596F8B26085CB5003BDFC8 /* SceneDelegate.swift */,
+				84557C2626369059003FA3FD /* ViewController */,
 				84596F9226085CB7003BDFC8 /* Assets.xcassets */,
 				84596F9726085CB7003BDFC8 /* Info.plist */,
 			);
@@ -319,11 +310,16 @@
 				84677D3D261D580E00CA6A28 /* EkoMessageModel.swift in Sources */,
 				84677D3F261D580E00CA6A28 /* MessageTableView.swift in Sources */,
 				84ECA204261AF9B800CD6772 /* MessageCell.swift in Sources */,
+				72EF91572654CE9C00CB07A9 /* SampleViewController.swift in Sources */,
+				72EF914B265404EE00CB07A9 /* MessageComposeBarView.swift in Sources */,
+				72EF914F2654B34B00CB07A9 /* MessageReplyView.swift in Sources */,
 				72E2F3862620A47200C95C90 /* KeyboardService.swift in Sources */,
 				84596F8A26085CB5003BDFC8 /* AppDelegate.swift in Sources */,
 				84677D43261D581700CA6A28 /* EkoDateFormatter.swift in Sources */,
 				7244F933261F459300D8C7F4 /* LoadingViewController.swift in Sources */,
 				84596F8C26085CB5003BDFC8 /* SceneDelegate.swift in Sources */,
+				72EF91482653D07500CB07A9 /* VideoHeaderView.swift in Sources */,
+				72EF91532654CC5E00CB07A9 /* ActionMenuManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
