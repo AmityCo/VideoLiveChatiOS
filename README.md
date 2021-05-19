@@ -1,4 +1,4 @@
-# VideoLiveChat
+# VideoLiveChat Demo App
 
 ## Stack Used
 - Swift [Official Document](https://developer.apple.com/swift/resources/)
